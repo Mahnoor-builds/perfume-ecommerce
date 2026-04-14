@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scentsation</title>
+    <link rel="stylesheet" href="homestyle.css">
+    <!-- <link rel="stylesheet" href="cartstyle.css"> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/Untitled design (7)[1] (3).png" alt=""></a>
+            
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="login.html" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="contact.html" class="forgot">Forgot password?</a>
+                                <a href="contact.html" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+    <!-- hero-section -->
+    <section class="hero-section">
+        <div class="slider">
+            <div class="slide">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>The Art of <span>Fragrance,</span> Crafted with Love.</h1>
+                        <p>At Scentsations, we craft fragrances that evoke emotions and spark memories.</p>
+                        <a href="product.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="all-images/hero-1.png" alt="Fragrance Bottle">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>Luxury in Every <span>Drop.</span></h1>
+                        <p>Our scents provide comfort, joy, and tranquility.</p>
+                        <a href="product.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="all-images/Untitled design (12)[1].png" alt="Fragrance Bottle">
+                    </div>
+                </div>
+            </div>
+    
+            <div class="slide">
+                <div class="hero-container">
+                    <div class="hero-content">
+                        <h1>Exclusive <span>Blends,</span> Just for You.</h1>
+                        <p>Discover signature fragrances that define elegance and style.</p>
+                        <a href="product.html" class="btn">Shop Now</a>
+                    </div>
+                    <div class="hero-image">
+                        <img src="all-images/Untitled design (13)[2].png" alt="Fragrance Bottle">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <!-- new collection -->
+    <section class="container">
+        <div  class="new-collection ">
+            <div class="text-content ">
+                <h2>
+                    <span class="year">2024</span>
+                    <span class="new">NEW COLLECTION</span></h2>
+                <p>A blend of timeless beauty and modern sophistication. Each piece is crafted to perfection, making every moment shine. Brilliance awaits.</p>
+            </div>
+        <div class="collection">
+            <div class="collection-left">
+                <a href="product.html"><div class="collection-item large">
+                    <img src="all-images/pexels-cottonbro-4612154.jpg" alt="Elegant Ear Art">
+                    <div class="text">
+                        <h4>ELEGANT EAR ART</h4>
+                        <h2> All products</h2>
+                    </div>
+                </div></a>
+                
+                <a href="product.html"><div class="collection-item small">
+                    <img src="all-images/pexels-valeriya-724635.jpg" alt="Elegance for Her">
+                    <div class="text">
+                        <h4>ELEGANCE</h4>
+                        <h2>FOR Women</h2>
+                    </div>
+                </div>
+                </a>
+            </div>
+            <div class="collection-right">
+                <a href="product.html"><div class="collection-item  small">
+                    <img src="all-images/pexels-valeriya-1961795.jpg" alt="Elegant Ear Art">
+                    <div class="text">
+                        <h4>ELEGANT EAR ART</h4>
+                        <h2> YOUR Men</h2>
+                    </div>
+                </div></a>
+        
+                <a href="product.html"><div class="collection-item large">
+                    <img src="all-images/pexels-dauphotographer-31188630.jpg" alt="Elegance for Her">
+                    <div class="text">
+                        <h4>ELEGANCE</h4>
+                        <h2>Ramzan Special Sale</h2>
+                    </div>
+                </div></a>
+            </div>
+           
+        </div>
+        </div>
+    </section>
+    <!-- why choose us -->
+     <section class=" choose" id="choose">
+        <div class="why-choose">
+                <h2>Why Choose Us?</h2>
+                <p>Discover premium fragrances with fast shipping and luxurious quality.</p>
+            <div class="why-choose-us">
+                <div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div class="feature-text">
+                        <h3>Fast Shipping</h3>
+                        <p>Get your favorite scents delivered quickly.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wind"></i>
+                        <div class="feature-text">
+                        <h3>Long-Lasting Fragrance</h3>
+                        <p>Premium quality perfumes that last all day.</p>
+                        </div>
+                </div>
+            </div>
+            <div>
+                <img src="all-images/Untitled design (10)[1].png" alt="">
+            </div>
+            <div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <div class="feature-text">
+                    <h3>Natural Ingredients</h3>
+                    <p>Crafted with high-quality, skin-friendly elements.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift feature-icon"></i>
+                    <div class="feature-text">
+                        <h3>Exclusive Packaging</h3>
+                        <p>Luxurious bottles & gift-ready presentation.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- client -->
+    <div class="testimonial-section">
+        <h2>CLIENTS TESTIMONIALS</h2>
+        <div class="testimonial-container center">
+            <div class="testimonial-box">
+                <p>The necklace I purchased is absolutely stunning! The craftsmanship is impeccable, and it adds a touch of elegance!</p>
+                <div class="testimonial-footer">
+                    <img src="all-images/testimonial-2.png" alt="Emily R.">
+                    <div>
+                        <div class="name">Emily R.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p>My custom engagement ring exceeded all my expectations. The detail and quality are phenomenal, my fiancée couldn’t be happier.</p>
+                <div class="testimonial-footer">
+                    <img src="all-images/testimonial-1.png" alt="John D.">
+                    <div>
+                        <div class="name">John D.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p>I adore the vintage bracelet I got from this shop. It’s beautifully designed and feels like a unique piece of history.</p>
+                <div class="testimonial-footer">
+                    <img src="all-images/testimonial-2.png" alt="Sarah M.">
+                    <div>
+                        <div class="name">Sarah M.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+            <div class="testimonial-box">
+                <p>My custom engagement ring exceeded all my expectations. The detail and quality are phenomenal, my fiancée couldn’t be happier.</p>
+                <div class="testimonial-footer">
+                    <img src="all-images/testimonial-1.png" alt="John D.">
+                    <div>
+                        <div class="name">John D.</div>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--newsletter+ footer--> 
+    <div class="newsletter-section">
+        <div class="newsletter-content">
+            <span><strong>15% DISCOUNT</strong> <br>For subscription to our newsletter</span>
+            <input type="text" class="input-field" placeholder="First name">
+            <input type="email" class="input-field" placeholder="Email address">
+            <button>Subscribe →</button>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section  footer-logo">
+                <div class="brand">
+                    <img src="all-images/Untitled design (7)[1] (3).png" alt="Joice Jewelry Logo">
+                    <p>Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links" >
+                <div class="footer-section">
+                    <h3>ACCOUNT</h3>
+                    <ul>
+                        <li><a href="home.html">Dashboard</a></li>
+                        <li><a href="cart.html">Orders</a></li>
+                        <li><a href="cart.html">Wishlist</a></li>
+                        <li><a href="contact.html">Addresses</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>CATALOG</h3>
+                    <ul>
+                        <li><a href="product.html">Shop by category</a></li>
+                        <li><a href="product.html">Shop by Gender</a></li>
+                        <li><a href="About.html">Promotions</a></li>
+                        <li><a href="contact.html">Sitemap</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#choose">Features</a></li>
+                        <li><a href="home.html">FAQ</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-contact">
+                <h3>CONTACT US</h3>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                <p> 7031 N 35th Ave, Phoenix, Arkansas United States</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Call us 8 AM - 10 PM <br><span>6668 5555 8464</span></span></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="copyright">
+                    <p>Copyright © 2025 Scentsation. All Rights Reserved</p>
+                </div>
+                <div class="footer-links footer-responsive">
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Interest Based Ads</a>
+                    <a href="#">Accessibility</a>
+                    <div class="scroll-to-top" id="#">
+                        <button  id="scrollTopBtn">&uarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+  
+    
+    <script src="home.js"></script>
+    <!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+      $(document).ready(function(){
+        $('.slider').slick({
+            autoplay: true,         // Auto slides
+            autoplaySpeed: 3000,    // Speed of auto sliding (3 sec)
+            dots: true,             // Show dots navigation
+            arrows: false,           // Show next/prev arrows
+            infinite: true,         // Infinite loop
+            speed: 800,             // Transition speed
+            slidesToShow: 1,        // Show 1 slide at a time
+            slidesToScroll: 1       // Scroll 1 slide at a time
+        });
+    });
+
+
+
+    
+</script>
+
+
+
+    </body>
+</html>

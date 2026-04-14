@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>about us</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/Untitled design (7)[1] (3).png" alt=""></a>
+            
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="login.html" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="contact.html" class="forgot">Forgot password?</a>
+                                <a href="contact.html" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+    <!-- Introduction section -->
+    <div class="wrapper-intro-about">
+        
+        <div class="intro-about">
+            <!-- <h1>About us</h1>
+            <p>
+                At Scentsation, we believe that every scent tells a story. Our carefully curated perfumes are crafted to evoke emotions, create memories, and leave a lasting impression. Inspired by luxury, nature, and timeless elegance, we blend the finest ingredients to bring you fragrances that feel as exquisite as they smell.
+                Discover your signature scent with us—where sophistication meets indulgence. 
+            </p> -->
+            <div class="intro-container-about">
+                <div class="about-link-home">
+                    <a href="#">Home</a> &gt; <a href="#">About us</a>
+                </div>
+                <h1 class="h1-about-intro">About Scentsation</h1>
+        
+                <div class="card-intro-about">
+                    <div class="icon-title-about">
+                        <i class="fa-solid fa-handshake-simple"></i>
+                        <p class="card-title-intro-about"> Our promise to you</p>
+                    </div>
+                    <div id="card-content-intro-about">
+                        <p class="card-p-intro-about">At Scentsation, we're committed to providing an exceptional shopping experience with an easy-to-use website, fast shipping, and outstanding customer service.</p>
+                    </div>
+                </div>
+        
+                <div class="card-intro-about">
+                    <div class="icon-title-about">
+                        <i class="fa-solid fa-rocket"></i> 
+                        <p class="card-title-intro-about">Our Mission</p>
+                    </div>                   
+                    <div id="card-content-intro-about">
+                        <p class="card-p-intro-about">To supply the biggest fragrance & cosmetics brands at affordable prices to all.</p>
+                    </div>
+                </div>
+        
+                <div class="card-intro-about">
+                    <div class="icon-title-about">
+                        <i class="fa-solid fa-truck-fast"></i>    
+                        <p class="card-title-intro-about">Orders Shipped</p>
+                    </div>                
+                    <div id="card-content-intro-about">
+                        <p class="card-p-intro-about">Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="profile-intro-about">
+            <img class="img-intro-about" src="all-images/2.png" alt="website mockup ">
+        </div>
+    </div>
+    
+    <!-- welcome message section start-->
+
+    <!-- <div class="welcome-about">
+        <div class="welcome-container-about">
+            
+            <div class="welcome-content-about">
+                <h2 class="welcome-heading-about">
+                    Welcome to Scentsation - The online fragrance store.
+                </h2>
+                <p class="welcome-p-about">
+                    Indulge in the art of fine perfumery with Scentsation—your ultimate destination for exquisite fragrances. We bring you a carefully curated collection of scents that captivate, inspire, and enhance your presence. Whether you seek a timeless classic, a bold new signature, or the perfect gift, we have something for every fragrance lover.
+                    Discover the essence of luxury, crafted for you.
+                    At Scentsation, we believe that fragrance is more than just a scent—it's an experience, a memory, a personal statement. Our selection features luxurious, long-lasting perfumes crafted to elevate your confidence and leave a lasting impression. Explore our collection and find the fragrance that speaks to you.
+                </p>
+            </div>
+            <div class="welcome-img-about">
+                <img id="image-welcome-about" src="3.png" alt="laptop image mockup" >
+            </div>
+        </div>
+    </div> -->
+    <div class="welcome-about">
+        <div class="welcome-container-about">
+            <div class="welcome-content-about">
+                <h2 class="h2-about">Welcome to Perfume Direct - The UK’s premier online fragrance & beauty store.</h1>
+                <p class="welcome-p-about">Stocking a range of specially selected perfumes, aftershaves & gift sets from luxury brands such as Hugo Boss, Gucci, Armani, Paco Rabanne, Calvin Klein, DKNY, Jimmy Choo & many more.
+                    Our customer-focused approach means that our business is built around you. We set out to provide the best products, at the best price with the best customer care package on the market.
+                    We are extremely proud of our fast, reliable delivery network, which means all orders will be shipped out in lightning-quick time from our state-of-the-art warehouse located in Manchester, UK.
+                </p>
+            </div>
+            <div class="welcome-img-about">
+                <img  src="all-images/3.png" alt="Perfume Bottles">
+            </div>
+        </div>
+    </div>
+
+    <!-- welcome message section ends -->
+
+    <!-- Customer focused approach section starts-->
+    <div class="welcome-about">
+        <div class="welcome-container-about">
+            <div class="welcome-img-about">
+                <img id="image-welcome-about" src="all-images/mobile-mockup-about.png" alt="laptop image mockup" >
+            </div>
+            <div class="welcome-content-about">
+                <h2 class="h2-about">
+                    Customer focused approach                
+                </h2>
+                <p class="welcome-p-about">
+                    At Scentsation, our customers are at the heart of everything we do. We are committed to providing a seamless shopping experience, ensuring that every fragrance lover finds their perfect scent with ease. From carefully curating a diverse selection of premium perfumes to offering detailed scent descriptions, we strive to make your fragrance journey enjoyable and effortless. Our dedicated customer support team is always ready to assist you, whether you need recommendations, have questions, or require personalized guidance.
+                    We believe that shopping for perfumes should be a luxurious and satisfying experience. That’s why we focus on quality, authenticity, and customer satisfaction. Every order is handled with care, packaged beautifully, and delivered with excellence. Your happiness is our priority, and we take pride in creating an experience that makes you return for more. At Scentsation, you’re not just buying a fragrance—you’re becoming part of a community that celebrates elegance, individuality, and the art of fine perfumery.
+                </p>
+            </div>
+            
+        </div>
+    </div>
+    <!-- Customer focused approach section ends-->
+    
+    
+    <!-- Card Section Begins  -->
+    <section id="cards-team-about">
+        <h2 class="h2-about ">Our Team</h2>
+        <div class="main-content-cards-about">
+            <!-- Slider main container starts-->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides starts-->
+                    <div class="swiper-slide">
+                        <div class="card-content-team-about">
+                            <img class="card-img-team-about" src="all-images/member1.jpg" alt="member1" >
+                            <div class="card-title-team-about">
+                                <h4 class="h4-about">Zahira Harram</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content-team-about">
+                            <img class="card-img-team-about" src="all-images/member2.jpg" alt="member2" >
+                            <div class="card-title-team-about">
+                                <h4 class="h4-about">Maryam Azam</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content-team-about">
+                            <img class="card-img-team-about" src="all-images/member3.jpg" alt="member3" >
+                            <div class="card-title-team-about">
+                                <h4 class="h4-about">Mahnoor Naveed</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content-team-about">
+                            <img class="card-img-team-about" src="all-images/member4.jpg" alt="member4" >
+                            <div class="card-title-team-about">
+                                <h4 class="h4-about">Nisha Kukreja</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="card-content-team-about">
+                            <img class="card-img-team-about" src="all-images/member5.jpg" alt="member5" >
+                            <div class="card-title-team-about">
+                                <h4 class="h4-about">Maheen Fayaz</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Slides ends-->
+            
+            <!-- navigation buttons -->
+            <div class="prevArrowBtn" aria-label="Previous slide">
+                <i class="fa-solid fa-chevron-left"></i> 
+            </div>
+            <div class="nextArrowBtn" aria-label="Next slide">
+                <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <!-- pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Slider main container ends-->
+        </div>
+    </section>
+    <!-- Card Section Ends  -->
+    <!-- why choose us starts-->
+     <!-- why choose us -->
+    <section class=" choose">
+        <div class="why-choose">
+                <h2>Why Choose Us?</h2>
+                <p>Discover premium fragrances with fast shipping and luxurious quality.</p>
+            <div class="why-choose-us">
+                <div>
+                    <div class="feature">
+                        <i class="fas fa-shipping-fast"></i>
+                        <div class="feature-text">
+                        <h3>Fast Shipping</h3>
+                        <p>Get your favorite scents delivered quickly.</p>
+                        </div>
+                    </div>
+                    <div class="feature">
+                        <i class="fas fa-wind"></i>
+                        <div class="feature-text">
+                        <h3>Long-Lasting Fragrance</h3>
+                        <p>Premium quality perfumes that last all day.</p>
+                        </div>
+                </div>
+            </div>
+            <div>
+                <img src="all-images/Untitled design (10)[1].png" alt="bg-image">
+            </div>
+            <div>
+                <div class="feature">
+                    <i class="fas fa-leaf"></i>
+                    <div class="feature-text">
+                    <h3>Natural Ingredients</h3>
+                    <p>Crafted with high-quality, skin-friendly elements.</p>
+                    </div>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-gift feature-icon"></i>
+                    <div class="feature-text">
+                        <h3>Exclusive Packaging</h3>
+                        <p>Luxurious bottles & gift-ready presentation.</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- why choose us ends-->
+    <!-- newsletter section starts-->
+    <section id="about-newsletter">
+        <div class="background-img-about">
+            <div class="newsletter-container">
+                <div class="newsletter-bg">
+                    <h2 class="h2-about">Subscribe to our newsletter</h2>
+                    <div class="news-form">
+                        <i id="i-newsletter" class="fa-solid fa-envelope"></i> 
+                        <input type="email" placeholder="Enter your Email">
+                        <button>Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section  footer-logo">
+                <div class="brand">
+                    <img src="all-images/Untitled design (7)[1] (3).png" alt="Joice Jewelry Logo">
+                    <p>Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links" >
+                <div class="footer-section">
+                    <h3>ACCOUNT</h3>
+                    <ul>
+                        <li><a href="home.html">Dashboard</a></li>
+                        <li><a href="cart.html">Orders</a></li>
+                        <li><a href="cart.html">Wishlist</a></li>
+                        <li><a href="contact.html">Addresses</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>CATALOG</h3>
+                    <ul>
+                        <li><a href="product.html">Shop by category</a></li>
+                        <li><a href="product.html">Shop by Gender</a></li>
+                        <li><a href="About.html">Promotions</a></li>
+                        <li><a href="contact.html">Sitemap</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#choose">Features</a></li>
+                        <li><a href="home.html">FAQ</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-contact">
+                <h3>CONTACT US</h3>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                <p> 7031 N 35th Ave, Phoenix, Arkansas United States</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Call us 8 AM - 10 PM <br><span>6668 5555 8464</span></span></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="copyright">
+                    <p>Copyright © 2025 Scentsation. All Rights Reserved</p>
+                </div>
+                <div class="footer-links footer-responsive">
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Interest Based Ads</a>
+                    <a href="#">Accessibility</a>
+                    <div class="scroll-to-top" id="#">
+                        <button  id="scrollTopBtn">&uarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- newsletter section ends-->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+    <noscript>
+        <p>Please enable JavaScript to view our team members.</p>
+    </noscript>   
+    <script src="about.js"></script>
+    <!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script> 
+</body>
+
+</html>

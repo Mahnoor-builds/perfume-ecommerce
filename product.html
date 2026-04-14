@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Page</title>
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/Untitled design (7)[1] (3).png" alt=""></a>
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="#" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="#" class="forgot">Forgot password?</a>
+                                <a href="#" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i> Cart</a></li>
+                <li><a href="contact.html" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+     <header class="hero-section"> <!--this is hero-section -->
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Elevate Your <span>Scent,</span> Elevate Your Presence.</h1>
+                <p>A scent that speaks before you do. Get yours today!</p>
+                <a href="index.html" class="btn">Shop Now</a>
+            </div>
+            <div class="hero-image">
+                <img src="all-images/banner1img.png" alt="product">
+            </div>
+        </div>
+    </header>
+    <!--this is products-section -->
+    <section id="all-product" class="product-section">
+        <h2> All Products</h2>
+        <div class="P-container">
+            <div class="perfume-card">
+                <img src="all-images/Breathing (1).jpg" alt="perfume1">
+                <h3>Mystic Pine</h3>
+                <p>PKR 10000</p>
+                <button class="add-to-cart" data-name="Mystic Pine" data-price="10000" data-image="Breathing (1).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Breathing (13).jpg" alt="perfume2">
+                <h3>Amber Smoke</h3>
+                <p>PKR 12000</p>
+                <button class="add-to-cart" data-name="Amber Smoke" data-price="12000" data-image="Breathing (13).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/men1.jpg" alt="perfume3">
+                <h3>Veloura</h3>
+                <p>PKR 20000</p>
+                <button class="add-to-cart" data-name="Veloura" data-price="20000" data-image="men1.jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation.jpg" alt="perfume4">
+                <h3>Lumea</h3>
+                <p>PKR 15000</p>
+                <button class="add-to-cart" data-name="Lumea" data-price="15000" data-image="Scentsation.jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (1).jpg" alt="perfume5">
+                <h3>Elysian Bloom</h3>
+                <p>PKR 18000</p>
+                <button class="add-to-cart" data-name="Elysian Bloom" data-price="18000" data-image="Scentsation (1).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (2).jpg" alt="perfume6">
+                <h3>Noctis Bloom</h3>
+                <p>PKR 16000</p>
+                <button class="add-to-cart" data-name="Noctis Bloom" data-price="16000" data-image="Scentsation (2).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (3).jpg" alt="perfume7">
+                <h3>Seraphine</h3>
+                <p>PKR 10000</p>
+                <button class="add-to-cart" data-name="Seraphine" data-price="10000" data-image="Scentsation (3).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (4).jpg" alt="perfume8">
+                <h3>Opal Essence</h3>
+                <p>PKR 12000</p>
+                <button class="add-to-cart" data-name="Opal Essence" data-price="12000" data-image="Scentsation (4).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (13).jpg" alt="perfume9">
+                <h3>Aurielle</h3>
+                <p>PKR 25000</p>
+                <button class="add-to-cart" data-name="Aurielle" data-price="25000" data-image="Scentsation (13).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (14).jpg" alt="perfume10">
+                <h3>Mystara</h3>
+                <p>PKR 14000</p>
+                <button class="add-to-cart" data-name="Mystara" data-price="14000" data-image="Scentsation (14).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (12).jpg" alt="perfume11">
+                <h3>Sienna Dusk</h3>
+                <p>PKR 10000</p>
+                <button class="add-to-cart" data-name="Sienna Dusk" data-price="10000" data-image="Scentsation (12).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (11).jpg" alt="perfume12">
+                <h3>Rosalune</h3>
+                <p>PKR 16000</p>
+                <button class="add-to-cart" data-name="Rosalune" data-price="16000" data-image="Scentsation (11).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <!--i will add more products -->
+        </div>
+    </section>
+    <!--this is women-section -->
+    <section id="women-products" class="product-section">
+        <h2>Women's Perfumes</h2>
+        <div class="P-container">
+            <div class="perfume-card">
+                <img src="all-images/Breathing (10).jpg" alt="Wperfume1">
+                <h3>Cherry Blossom</h3>
+                <p>PKR 18000</p>
+                <button class="add-to-cart" data-name="Cherry Blossom" data-price="18000" data-image="Breathing (10).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Breathing (13).jpg" alt="Wperfume2">
+                <h3>Aurielle</h3>
+                <p>PKR 25000</p>
+                <button class="add-to-cart" data-name="Aurielle" data-price="25000" data-image="Breathing (13).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (4).jpg" alt="Wperfume3">
+                <h3>Opal Essence</h3>
+                <p>PKR 12000</p>
+                <button class="add-to-cart" data-name="Opal Essence" data-price="12000" data-image="Scentsation (4).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (6).jpg" alt="Wperfume4">
+                <h3>Amoura</h3>
+                <p>PKR 20000</p>
+                <button class="add-to-cart" data-name="Amoura" data-price="20000" data-image="Scentsation (6).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (7).jpg" alt="Wperfume5">
+                <h3>Sylvaris</h3>
+                <p>PKR 15000</p>
+                <button class="add-to-cart" data-name="Sylvaris" data-price="15000" data-image="Scentsation (7).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (8).jpg" alt="Wperfume6">
+                <h3>Ember Glow</h3>
+                <p>PKR 8000</p>
+                <button class="add-to-cart" data-name="Ember Glow" data-price="8000" data-image="Scentsation (8).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+        </div>
+         <!--i will add more products -->
+    </section>
+         <!--men section -->
+    <section id="men-products" class="product-section">
+        <h2>Men's Perfume</h2>
+        <div class="P-container">
+            <div class="perfume-card">
+                <img src="all-images/men1.jpg" alt="Mperfume1">
+                <h3>Veloura</h3>
+                <p>PKR 20000</p>
+                <button class="add-to-cart" data-name="Veloura" data-price="20000" data-image="men1.jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Breathing (7).jpg" alt="Mperfume2">
+                <h3>Ocean Drift</h3>
+                <p>PKR 10000</p>
+                <button class="add-to-cart" data-name="Ocean Drift" data-price="10000" data-image="Breathing (7).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (9).jpg" alt="Mperfume3">
+                <h3>Zephyr Whisper</h3>
+                <p>PKR 18000</p>
+                <button class="add-to-cart" data-name="Zephyr Whisper" data-price="18000" data-image="Scentsation (9).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (10).jpg" alt="Mperfume4">
+                <h3>Moonveil</h3>
+                <p>PKR 12000</p>
+                <button class="add-to-cart" data-name="Moonveil" data-price="12000" data-image="Scentsation (10).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (11).jpg" alt="Mperfume5">
+                <h3>Rosalune</h3>
+                <p>PKR 16000</p>
+                <button class="add-to-cart" data-name="Rosalune" data-price="16000" data-image="Scentsation (11).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+            <div class="perfume-card">
+                <img src="all-images/Scentsation (12).jpg" alt="Mperfume6">
+                <h3>Sienna Dusk</h3>
+                <p>PKR 10000</p>
+                <button class="add-to-cart" data-name="Sienna Dusk" data-price="10000" data-image="Scentsation (12).jpg">
+                    <i class="fas fa-shopping-cart"></i>Add to cart</button>
+            </div>
+        </div>
+    </section>
+   <!-- this is footer -->
+   <div class="newsletter-section">
+    <div class="newsletter-content">
+        <span><strong>15% DISCOUNT</strong> <br>For subscription to our newsletter</span>
+        <input type="text" class="input-field" placeholder="First name">
+        <input type="email" class="input-field" placeholder="Email address">
+        <button>Subscribe →</button>
+    </div>
+</div>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section  footer-logo">
+            <div class="brand">
+                <img src="all-images/Untitled design (7)[1] (3).png" alt="Joice Jewelry Logo">
+                <p>Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+            </div>
+        </div>
+
+        <div class="footer-section footer-links" >
+            <div class="footer-section">
+                <h3>ACCOUNT</h3>
+                <ul>
+                    <li><a href="home.html">Dashboard</a></li>
+                    <li><a href="cart.html">Orders</a></li>
+                    <li><a href="cart.html">Wishlist</a></li>
+                    <li><a href="contact.html">Addresses</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>CATALOG</h3>
+                <ul>
+                    <li><a href="product.html">Shop by category</a></li>
+                    <li><a href="product.html">Shop by Gender</a></li>
+                    <li><a href="About.html">Promotions</a></li>
+                    <li><a href="contact.html">Sitemap</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h3>HELP</h3>
+                <ul>
+                    <li><a href="#choose">Features</a></li>
+                    <li><a href="home.html">FAQ</a></li>
+                    <li><a href="About.html">About us</a></li>
+                    <li><a href="contact.html">Contact us</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-section footer-contact">
+            <h3>CONTACT US</h3>
+            <div class="contact-icon">
+                <i class="fa-solid fa-map-location-dot"></i>
+            <p> 7031 N 35th Ave, Phoenix, Arkansas United States</p>
+            </div>
+            <div class="contact-icon">
+                <i class="fa-solid fa-phone-volume"></i>
+                <p>Call us 8 AM - 10 PM <br><span>6668 5555 8464</span></span></p>
+            </div>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-telegram"></i></a>
+                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="footer-bottom-container">
+            <div class="copyright">
+                <p>Copyright © 2025 Scentsation. All Rights Reserved</p>
+            </div>
+            <div class="footer-links footer-responsive">
+                <a href="#">Terms of use</a>
+                <a href="#">Privacy Policy</a>
+                <a href="#">Interest Based Ads</a>
+                <a href="#">Accessibility</a>
+                <div class="scroll-to-top" id="#">
+                    <button  id="scrollTopBtn">&uarr;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <script src="product.js"></script>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/logo.png" alt=""></a>
+            
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="#" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="Contact.html" class="forgot">Forgot password?</a>
+                                <a href="Contact.html" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Shop</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a></li>
+                <li><a href="#" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+    <div class="contact-container">
+        <div class="main-img">
+            <img src="c-4.jpg" alt="Contact us header image">
+        </div>
+        
+        <div class="form-section">
+            <h2>Get in Touch</h2>
+            <form class="contact-form">
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Your Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Your Message</label>
+                    <textarea id="message" name="message" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+
+        <div class="info-section">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p><i class="fas fa-map-marker-alt"></i> 123 Main Street, City, Country</p>
+                <p><i class="fas fa-phone"></i> +1 (123) 456-7890</p>
+                <p><i class="fas fa-envelope"></i> info@yourcompany.com</p>
+                <p><i class="fas fa-clock"></i> Mon-Fri: 9AM - 5PM</p>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3022.2155732912346!2d-73.98784492453763!3d40.74844097138991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDDCsDQ0JzU0LjQiTiA3M8KwNTknMTkuNyJX!5e0!3m2!1sen!2sus!4v1620000000000!5m2!1sen!2sus" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </div>
+    </div>
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script src="app.js"></script>
+</body>
+</html>

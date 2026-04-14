@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfume Blog - Post</title>
+    <link rel="stylesheet" href="blog.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <script defer src="blog.js"></script>
+</head>
+<body class="post-page"> <!-- Added a class for styling -->
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/Untitled design (7)[1] (3).png" alt=""></a>
+            
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="login.html" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="contact.html" class="forgot">Forgot password?</a>
+                                <a href="contact.html" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+
+    <!-- Blog Post Header -->
+    <header class="post-header">
+        <h1 id="post-title">Loading...</h1>
+    </header>
+
+    <!-- Blog Post Content -->
+    <section class="post-content">
+        <img id="post-image" src="" alt="Blog Image">
+        <div id="post-text">
+            <p>Loading content...</p>
+        </div>
+    </section>
+
+    <!-- Back to Blog -->
+    <div class="back-to-blog">
+        <a href="blog.html">← Back to Blog</a>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section  footer-logo">
+                <div class="brand">
+                    <img src="all-images/Untitled design (7)[1] (3).png" alt="Joice Jewelry Logo">
+                    <p>Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links" >
+                <div class="footer-section">
+                    <h3>ACCOUNT</h3>
+                    <ul>
+                        <li><a href="home.html">Dashboard</a></li>
+                        <li><a href="cart.html">Orders</a></li>
+                        <li><a href="cart.html">Wishlist</a></li>
+                        <li><a href="contact.html">Addresses</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>CATALOG</h3>
+                    <ul>
+                        <li><a href="product.html">Shop by category</a></li>
+                        <li><a href="product.html">Shop by Gender</a></li>
+                        <li><a href="About.html">Promotions</a></li>
+                        <li><a href="contact.html">Sitemap</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#choose">Features</a></li>
+                        <li><a href="home.html">FAQ</a></li>
+                        <li><a href="About.html">About us</a></li>
+                        <li><a href="contact.html">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-contact">
+                <h3>CONTACT US</h3>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                <p> 7031 N 35th Ave, Phoenix, Arkansas United States</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Call us 8 AM - 10 PM <br><span>6668 5555 8464</span></span></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="copyright">
+                    <p>Copyright © 2025 Scentsation. All Rights Reserved</p>
+                </div>
+                <div class="footer-links footer-responsive">
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Interest Based Ads</a>
+                    <a href="#">Accessibility</a>
+                    <div class="scroll-to-top" id="#">
+                        <button  id="scrollTopBtn">&uarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="home.js"></script>
+</body>
+</html>

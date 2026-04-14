@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SCESTSATION Perfume - My Account</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="homestyle.css">
+    <link rel="stylesheet" href="cartstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!-- Slick CSS -->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <!-- Logo -->
+            <a href="home.html" class="logo"><img src="all-images/mobile-logo.png" alt=""></a>
+            
+            
+            <!-- Nav Links -->
+            <nav class="nav-links">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="product.html">Shop</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+    <!-- First Search Bar (Hidden Initially) -->
+    <div class="top-search">
+        <div class="container">
+            <div class="input-group">
+                <span class="input-group-addon"><i class="fa fa-search"></i></span>
+                <input type="text" class="form-control" placeholder="Search">
+                <span class="input-group-addon close-search"><i class="fa fa-times"></i></span>
+            </div>
+        </div>
+    </div>
+
+            <div class="icons">
+                <div class="search-bar">
+                    <button type="button" class="search-icon"><i class="fa fa-search"></i></button>
+                </div>
+                <a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a>
+                <div class="user-container">
+                    <a href="login.html" class="login">
+                        <i class="fas fa-user"></i> 
+                    </a>
+                    
+                    <!-- Login Form (Hidden by Default) -->
+                    <div class="login-container">
+                        <form class="login-form">
+                            <input type="text" placeholder="Username" class="input-field">
+                            <input type="password" placeholder="Password" class="input-field">
+                            <button type="submit" class="login-btn">Log In</button>
+                            <div class="links">
+                                <a href="contact.html" class="forgot">Forgot password?</a>
+                                <a href="contact.html" class="signup">Sign up</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                
+                
+            </div>
+            
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="mobile-menu">
+            <button id="close-menu" class="close-menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="product.html">Shop</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="cart.html" class="cart"><i class="fas fa-shopping-cart"></i>
+                    <span id="cart-count">0</span></a></li>
+                <li><a href="login.html" class="login"><i class="fas fa-user"></i> Login</a>
+                
+                </li>
+            </ul>    
+        </div>
+    </header>
+    <div class="contact-container">
+        <div class="account-sections">
+            <div class="login-section contact-form-box">
+                <h1 class="contact-h1">MY ACCOUNT</h1>
+                <h2 class="contact-h2">LOGIN</h2>
+                <form>
+                    <label for="username" class="contact-label">Username or email address *</label>
+                    <input type="text" id="username" name="username" required>
+                    
+                    <label for="password"  class="contact-label">Password *</label>
+                    <input type="password" id="password" name="password" required>
+                    <span class="password-toggle">👁️</span>
+                    
+                    <div class="remember-me">
+                        <input type="checkbox" id="remember" name="remember">
+                        <label for="remember"  class="contact-label">Remember me</label>
+                    </div>
+                    
+                    <button type="submit" class="btn">Log in</button>
+                </form>
+                
+                <p class="lost-password"><a href="#">Lost your password?</a></p>
+            </div>
+
+            <div class="register-section contact-form-box">
+                <h2 class="contact-h2">REGISTER</h2>
+                <form>
+                    <label class="contact-label" for="email">Email address *</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <label class="contact-label" for="reg-password">Password *</label>
+                    <input type="password" id="reg-password" name="password" required>
+                    <span class="password-toggle">👁️</span>
+                    
+                    <label class="contact-label" for="confirm-password">Confirm Password *</label>
+                    <input type="password" id="confirm-password" name="confirm-password" required>
+                    <span class="password-toggle">👁️</span>
+                    
+                    <p class="register-text">Your personal data will be used to support your experience throughout this website, to manage access to your account, and for other purposes described in our privacy policy.</p>
+                    
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="brand-section">
+            <h2>SCESTSATION PERFUME</h2>
+            <p class="brand-description">Where every spritz unveils your essence - a symphony of rare fragrances crafted to captivate. Our elixirs don't just adorn your skin, they whisper your untold stories in notes of luxury."</p>
+        </div>
+
+        <div class="navigation-links">
+            <a href="#">Account</a>
+            <a href="#">Catalog</a>
+            <a href="#">Help</a>
+            <a href="#">Contact Us</a>
+        </div>
+
+        <div class="footer-section-contact">
+            <div class="contact-info">
+                <h2>CONTACT US</h2>
+                <p class="address">7031 N 35th Ave, Phoenix, Arkansas, United States</p>
+                <p class="phone">Call us 8 AM – 10 PM<br>8668 5555 8464</p>
+            </div>
+            
+            <div class="payment-section">
+                <p><strong>VISA</strong></p>
+                <p>PayPal</p>
+                <p>Leggings</p>
+            </div>
+        </fo>
+    </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section  footer-logo">
+                <div class="brand">
+                    <img src="all-images/Untitled design (7)[1] (3).png" alt="Joice Jewelry Logo">
+                    <p>Unleash the radiance of your inner beauty with our premium jewelry brand - a perfect blend of sophistication and style.</p>
+                </div>
+            </div>
+
+            <div class="footer-section footer-links" >
+                <div class="footer-section">
+                    <h3>ACCOUNT</h3>
+                    <ul>
+                        <li><a href="#">Dashboard</a></li>
+                        <li><a href="#">Orders</a></li>
+                        <li><a href="#">Wishlist</a></li>
+                        <li><a href="#">Addresses</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>CATALOG</h3>
+                    <ul>
+                        <li><a href="#">Shop by category</a></li>
+                        <li><a href="#">Shop by brand</a></li>
+                        <li><a href="#">Promotions</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+        
+                <div class="footer-section">
+                    <h3>HELP</h3>
+                    <ul>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Contact us</a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="footer-section footer-contact">
+                <h3>CONTACT US</h3>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-map-location-dot"></i>
+                <p> 7031 N 35th Ave, Phoenix, Arkansas United States</p>
+                </div>
+                <div class="contact-icon">
+                    <i class="fa-solid fa-phone-volume"></i>
+                    <p>Call us 8 AM - 10 PM <br><span>6668 5555 8464</span></span></p>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-telegram"></i></a>
+                    <a href="#"><i class="fab fa-x-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="footer-bottom-container">
+                <div class="copyright">
+                    <p>Copyright © 2025 Scentsation. All Rights Reserved</p>
+                </div>
+                <div class="footer-links footer-responsive">
+                    <a href="#">Terms of use</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Interest Based Ads</a>
+                    <a href="#">Accessibility</a>
+                    <div class="scroll-to-top" id="#">
+                        <button  id="scrollTopBtn">&uarr;</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="login.css"></script>
+    <script src="home.js"></script>
+    <!-- jQuery (required for Slick) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<!-- Slick JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+</body>
+</html>

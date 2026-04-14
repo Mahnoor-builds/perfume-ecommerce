@@ -1,0 +1,273 @@
+/* Base Styles */
+
+
+.contact-container {
+    max-width: 1200px;
+    margin: 106px auto;
+    padding: 30px 30px;
+    background-color: #fff;
+}
+
+.contact-form-box, .form-box {
+    border: 1px solid #e0e0e0;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.account-sections {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.login-section, .register-section {
+    flex: 1;
+}
+
+.contact-h1 {
+    color: #000;
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contact-h2 {
+    font-size: 20px;
+    font-weight: 600;
+    margin: 0 0 20px 0;
+    color: #000;
+    text-transform: uppercase;
+}
+
+.contact-label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 500;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 0 0 20px 0;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+.password-toggle {
+    cursor: pointer;
+    margin-left: 10px;
+    position: relative;
+    top: -45px;
+    left: calc(100% - 30px);
+    user-select: none;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.remember-me {
+    margin: 15px 0;
+}
+
+.btn {
+    background-image: linear-gradient(90deg, rgb(211, 152, 42) 0%, rgb(254, 204, 112) 100%);
+    transition: width 0.3s ease-in-out;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    
+}
+
+.btn:hover {
+    background-color: #e67300;
+}
+
+.lost-password {
+    margin-top: 15px;
+}
+
+.lost-password a {
+    color: #666;
+    text-decoration: none;
+}
+
+.lost-password a:hover {
+    text-decoration: underline;
+}
+
+.register-text {
+    color: #666;
+    font-size: 14px;
+    margin: 15px 0 20px;
+    line-height: 1.5;
+}
+
+.brand-section {
+    background-color: #f9f9f9;
+    padding: 25px;
+    margin: 30px 0;
+    border-radius: 5px;
+}
+
+.brand-description {
+    font-style: italic;
+    color: #555;
+    margin: 0;
+    line-height: 1.6;
+}
+
+.navigation-links {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 40px 0;
+    padding: 15px 0;
+    border-top: 1px solid #eaeaea;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.navigation-links a {
+    color: #333;
+    text-decoration: none;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.navigation-links a:hover {
+    color: #ff7f00;
+}
+
+.footer-section-contact {
+    margin-top: 40px;
+    padding-top: 30px;
+    border-top: 1px solid #eaeaea;
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+}
+
+.contact-info {
+    flex: 2;
+}
+
+.address, .phone {
+    margin: 0 0 15px 0;
+    color: #666;
+    line-height: 1.6;
+}
+
+.payment-section {
+    flex: 1;
+    color: #666;
+    text-align: right;
+}
+
+.payment-section p {
+    margin: 5px 0;
+}
+
+.payment-section strong {
+    color: #000;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+    .contact-container {
+        padding: 20px;
+    }
+    
+    .navigation-links {
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .account-sections {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .contact-form-box, .form-box {
+        padding: 20px;
+    }
+    
+    .navigation-links {
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 10px 0;
+    }
+    
+    .footer-section-contact {
+        flex-direction: column;
+    }
+    
+    .payment-section {
+        text-align: left;
+        margin-top: 20px;
+    }
+    
+    .password-toggle {
+        top: -40px;
+    }
+}
+
+@media (max-width: 576px) {
+    .contact-container {
+        padding: 15px;
+    }
+    
+    .contact-h1 {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+    
+    .contact-h2 {
+        font-size: 18px;
+    }
+    
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+        padding: 10px 12px;
+    }
+    
+    .btn {
+        padding: 10px 20px;
+    }
+    
+    .brand-section {
+        padding: 20px;
+    }
+    
+    .navigation-links a {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .navigation-links {
+        gap: 10px 15px;
+    }
+    
+    .navigation-links a {
+        font-size: 13px;
+    }
+    
+    .contact-h1 {
+        font-size: 22px;
+    }
+}
